@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screen1">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_centerHorizontal="true"
+            android:id="@+id/input"
+            android:hint="Enter A Number"
+            android:layout_width="200dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/fact"
+            android:layout_marginTop="30dp"
+            android:text="Get Reeverse"
+            android:layout_below="@id/input"
+            android:layout_width="300dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:visibility="gone"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:text="This is Factoral Of Given Number "
+            android:id="@+id/factoral_output"
+            android:layout_below="@id/fact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/square"
+            android:text="Get Armstrong Number"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/factoral_output"
+            android:layout_width="300dp"
+            android:layout_height="50dp"/>
+
+
+        <TextView
+            android:visibility="gone"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:text="This is square Of Given Number "
+            android:id="@+id/square_output"
+            android:layout_below="@id/square"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_marginTop="70dp"
+            android:text="Clear All"
+            android:layout_below="@id/square_output"
+            android:layout_width="300dp"
+            android:layout_height="50dp"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
